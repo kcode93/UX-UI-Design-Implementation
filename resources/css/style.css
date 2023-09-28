@@ -1,58 +1,136 @@
-:root{
-    --figma-conversion: 62.5%;
-    --main-font: 'Poppins', sans-serif;
-    --secondary-font: 'Playfair Display', serif;
+:root {
+	--figma-conversion: 62.5%;
+	--main-font: "Poppins", sans-serif;
+	--secondary-font: "Playfair Display", serif;
+	--primary-color: #ffb179;
 }
 
-
-body{
-    font-family: var(--main-font);
+body {
+	font-family: var(--main-font);
 }
 
-.container{
-    max-width: 80%;
-    margin: 0 auto;
+.container {
+	max-width: 80%;
+	margin: 0 auto;
 }
 
-header img{
-    width: 100px;
-    height: 100px;
+/**** navbar ******/
+
+.logo {
+	display: flex;
+	align-items: center;
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo h3 {
+	font-weight: bold;
+	margin-left: 0.5rem;
 }
 
-nav{
-    margin: 4rem;
+header img {
+	width: 35px;
+	height: 35px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	margin: 4rem;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-    margin-bottom: 2px;
-    padding: 1.5rem 0;
-
+	list-style: none;
+	display: flex;
+	gap: 4rem;
+	margin-bottom: 2px;
+	padding: 1.5rem 0;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: relative;
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: bold;
+	position: relative;
 }
 
-nav ul li.active:before{
-    position: absolute;
-    content: "";
-    width: 2.1rem;
-    height: 1px;
-    border-bottom: 4px solid black;
-    top: 7.1rem;
+nav ul li.active:before {
+	position: absolute;
+	content: "";
+	width: 2.1rem;
+	height: 1px;
+	border-bottom: 4px solid black;
+	top: 7.1rem;
+}
+
+/**** end of navbar ******/
+
+/**** main ***/
+
+main {
+	display: flex;
+	gap: 8em;
+	margin-top: 8em;
+}
+
+.left-col {
+	width: 45%;
+	border: 1px solid black;
+}
+
+.right-col {
+	flex-grow: 1;
+	border: 1px solid black;
+}
+
+.left-col h1 {
+	font-size: 3.5rem;
+	font-family: var(--secondary-font);
+	font-weight: normal;
+}
+
+.left-col p {
+	font-size: 1.8rem;
+	margin-top: 1.2rem;
+}
+
+.cta-btns {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border: 1px solid black;
+	gap: 2em;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	border-radius: 1rem;
+	padding: 1.5rem 0.8rem;
+	margin: 1.5rem 0;
+}
+
+.secondary-cta {
+	display: flex;
+	text-decoration: none;
+	border: 1px solid black;
+	align-items: center;
+}
+
+.secondary-cta #plans {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: black;
+}
+
+.secondary-cta svg {
+	width: 50px;
+	margin-left: 0.5rem;
 }
