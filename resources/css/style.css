@@ -78,8 +78,8 @@ main {
 }
 
 .left-col {
-	width: 45%;
-	border: 1px solid black;
+	width: 50%;
+	/*border: 1px solid black;*/
 }
 
 .right-col {
@@ -102,7 +102,7 @@ main {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	gap: 2em;
 }
 
@@ -133,4 +133,22 @@ main {
 .secondary-cta svg {
 	width: 50px;
 	margin-left: 0.5rem;
+}
+
+.news {
+	font-size: 1rem;
+	display: flex;
+	padding: 4em;
+	align-items: center;
+	border: 1px solid black;
+	line-height: 2.2rem;
+}
+
+.details {
+	font-size: 1rem;
+}
+
+.employees {
+	margin-right: 5rem;
+	border: 1px solid black;
 }
