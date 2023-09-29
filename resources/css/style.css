@@ -7,6 +7,8 @@
 
 body {
 	font-family: var(--main-font);
+	color: black;
+	background-color: #ddd;
 }
 
 .container {
@@ -99,6 +101,7 @@ main {
 }
 
 .cta-btns {
+	margin-top: 2.5rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -136,12 +139,25 @@ main {
 }
 
 .news {
-	font-size: 1rem;
+	position: relative;
 	display: flex;
 	padding: 4em;
+	margin: 2rem 0;
 	align-items: center;
-	border: 1px solid black;
-	line-height: 2.2rem;
+	justify-content: space-between;
+	border: 2px solid black;
+	border-radius: 0.8rem;
+}
+
+.news::before {
+	position: absolute;
+	content: "";
+	background: url("../img/confetti.svg");
+	width: 100px;
+	height: 100px;
+	top: -10px;
+	left: -10px;
+	z-index: 2;
 }
 
 .details {
@@ -149,6 +165,16 @@ main {
 }
 
 .employees {
-	margin-right: 5rem;
-	border: 1px solid black;
+	margin: 0 2rem;
+	min-width: 6rem;
+}
+
+.employees p {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.details p {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
 }
