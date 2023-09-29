@@ -76,7 +76,7 @@ nav ul li.active:before {
 main {
 	display: flex;
 	gap: 8em;
-	margin-top: 8em;
+	margin-top: 6em;
 }
 
 .left-col {
@@ -123,7 +123,6 @@ main {
 .secondary-cta {
 	display: flex;
 	text-decoration: none;
-	border: 1px solid black;
 	align-items: center;
 }
 
@@ -177,4 +176,71 @@ main {
 .details p {
 	font-size: 1.5rem;
 	line-height: 1.8rem;
+}
+
+/* Right Column Gallery */
+.right-col {
+	display: grid;
+	gap: 2.1em;
+	grid-template-columns: repeat(2, auto);
+	border: none;
+	grid-template-areas:
+		"left right"
+		"left bottom";
+}
+
+.card {
+	border-radius: 0.5rem;
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.card-details {
+	padding: 1.1rem;
+	background-color: white;
+	margin: 0.8rem 0.5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: black;
+}
+
+.card-details a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.card-product p {
+	margin-top: 1rem;
+	font-size: 1.1rem;
+}
+
+.card1 {
+	grid-area: left;
+	background-image: url(../img/Shoes-1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card2 {
+	grid-area: right;
+	background-image: url(../img/Shoes-2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card3 {
+	grid-area: bottom;
+	background-image: url(../img/Shoes-3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
